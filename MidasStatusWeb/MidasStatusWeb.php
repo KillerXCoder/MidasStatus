@@ -5,7 +5,7 @@
 # Autor: KillerXCoder (Peter Federl)
 # E-Mail: peter.federl@gmail.com
 #===================================================================
-*/
+*/  
 $servername = '';
 $username = '';
 $password = '';
@@ -33,7 +33,7 @@ if($result->num_rows > 0){
 	while($row = $result->fetch_assoc()) {
 		$rpg = $row['hraci'];
 		if ($row['online'] == 0){
-			$ŕpg_offline = 1;
+			$rpg_offline = 1;
 		}
 		else{
 			$rpg_offline = 0;
@@ -231,7 +231,7 @@ echo '<div class="divclass" id="schovat" onclick="copyText();return false;" styl
 echo '<table style="position:relative;top:50%; bottom:50%;border:none !important;margin:0px;">';
 echo '
   <tr>
-	<td class="logo" rowspan="2" style=""><img src="https://gamepedia.cursecdn.com/minecraft_gamepedia/b/ba/Book_and_Quill.png" style="max-width:2.5em; height:2.5em; "></td>
+	<td class="logo" rowspan="2" style=""><img src="https://midascraft.sk/wp-content/uploads/2019/10/bookquill.png" style="max-width:2.5em; height:2.5em; "></td>
     <td class="" style="text-shadow: 0px 0px 1px #000000;text-transform: uppercase;font-weight:bolder !IMPORTANT;border:none !important; padding-bottom:0.1em; padding-left:0.1em "><a href="#" class="hover1" onclick="copyText();return false;" id="copy1">RPG</a></td>
   </tr>';
 if($rpg_offline == 0)  {
@@ -336,5 +336,4 @@ echo '</div>';
 
 
 echo '</div>';
-
 ?>
